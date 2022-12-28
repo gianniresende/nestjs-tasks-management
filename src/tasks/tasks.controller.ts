@@ -8,10 +8,10 @@ import {
   Patch,
   Query,
 } from '@nestjs/common';
-import { CreateTaskDto } from './dto/create-task.dto';
-import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
-import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
-import { Task, TaskStatus } from './task.module';
+import { CreateTaskDto } from '../shared/dts/create-task.dto';
+import { GetTasksFilterDto } from '../shared/dts/get-tasks-filter.dto';
+import { UpdateTaskStatusDto } from '../shared/dts/update-task-status.dto';
+import { Task } from './task.module';
 import { TasksService } from './tasks.service';
 
 @Controller('tasks')
